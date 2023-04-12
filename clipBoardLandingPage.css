@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+main{
+    width: 100%;
+    background-color: hsla(0, 0%, 93%, 0.856);
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+ 
+}
+
+.encabezado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoEncabezado{
+    margin: 80px auto;
+    padding: 0;
+}
+
+.logoEncabezado img{
+    width: 85px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ios{
+    width: 96%;
+    padding: 12px 10px;
+    margin-top: 40px;
+    background-color: hsl(171, 66%, 44%);
+    color: rgb(243, 248, 252);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 2px 0px hsl(171, 25%, 38%),
+    0px  1px 2px hsla(171, 28%, 76%, 0.815),
+    0px 10px 20px hsla(171, 62%, 72%, 0.808);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.mac{
+    width: 96%;
+    padding: 12px 10px;
+    margin: 20px 0 100px 0;
+    background-color: hsl(233, 100%, 69%);
+    color: rgb(243, 248, 252);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 2px 0px hsl(211, 17%, 34%),
+    0px  1px 2px hsla(215, 28%, 76%, 0.815),
+    0px 10px 20px hsla(221, 62%, 72%, 0.589);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.titulos{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+}
+
+.titulo{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+}
+
+.parrafo{
+    text-align: center;
+    font-size: 0.7rem;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.keepTrack{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.articuloKeepTrack img{
+    width: 96%;
+    margin: 40px 0 0px 0;
+}
+
+.subtituloKeep{
+    font-size: 1.1rem;
+    color: rgb(51, 51, 51);
+    margin-top: 40px;
+}
+
+.access{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.access img{
+    width: 96%;
+    margin: 40px 0 90px 0;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.parrafosLista img{
+    margin: 30px 0 30px 0;
+}
+
+.logos figure{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.logos img{
+    width: 100px;
+    margin: 30px;
+}
+
+.clipboard{
+    margin-top: 100px;
+}
+
+.pie{
+    background-color: rgb(233, 233, 233);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoPie img{
+    width: 40px;
+    margin: 30px 0;
+}
+
+.pie h3{
+    color: hsl(210, 8%, 41%);
+    font-size: 0.65rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.redes{
+    margin: 10px 0 30px 0;
+    display: flex;
+}
+
+.redes img{
+    width: 20px;
+}
+
+.twitter{
+    margin: 0 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 769px){
+    .contenedor{
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 100%;
+    }
+
+    .encabezado{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 25px 0 100px 0;
+    }
+
+    .ios{
+        margin: 0px 10px 0 0;
+        width: 20%;
+    }
+
+    .mac{
+        margin: 0px 0 0px 10px;
+        width: 20%;
+    }
+
+    .parrafo{
+        width: 40%;
+        align-self: center;
+    }
+
+    .articuloKeepTrack{
+        display: flex;
+        align-items: center;
+    }
+
+    .articuloKeepTrack img{
+        width: 50%;
+        margin: 40px 150px 0 -100px;
+    }
+
+    .textosKeepTrack h2{
+        text-align: left;
+    }
+
+    .textosKeepTrack p{
+        text-align: left;
+        width: 50%;
+    }
+
+    .access img{
+        width: 94%;
+        margin: 50px 0;
+    }
+
+    .supercharge{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parrafosLista{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafosLista img{
+        margin: 0 0 20px 0;
+        width: 40px
+    }
+
+    .sneak img{
+        width: 54px;
+    }
+
+    .parrafosLista p{
+        width: 100%;
+    }
+
+    .logos figure{
+        flex-direction: row;
+    }
+
+    .logos img{
+        width: auto;
+        height: 40px;
+        margin: 0 50px;
+    }
+
+    .clipboard{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+ 
+    }
+    
+}
